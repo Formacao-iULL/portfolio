@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/contato.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <section id="messages__content">
+      <h1>Mensagens</h1>
+
+      <p id="emptyMessagesList">Nenhuma mensagem foi encontrada. Para criar uma nova mensagem clique no botão abaixo.</p>
+      <div id="messagesList"></div>
+
+      <button id="deleteMessagesButton">Excluir mensagens</button>
+      <button id="createMessageButton">Enviar uma mensagem</button>
+    </section>
+
+
+    <script src="../js/components/Navbar.js"></script>
+    <script src="../js/mensagens.js"></script>
+
+  </body>
+</html>

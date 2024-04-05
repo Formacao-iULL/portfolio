@@ -7,7 +7,7 @@
   margin-top: 2rem;
 }
 
-.contato__formulario button {
+button {
   padding: 1rem 4rem;
   margin: 0;
   border: 0;
@@ -16,6 +16,13 @@
   font-size: 1rem;
   font-weight: 600;
   border-radius: .5rem;
+  cursor: pointer;
+}
+
+.button_group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .formulario__input {

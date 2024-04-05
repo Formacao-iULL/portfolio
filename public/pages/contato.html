@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/contato.css">
 
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,32 +30,35 @@
             / ou pelo formulário abaixo
           </p>
 
-          <form>
+          <form id="contactForm">
             <div class="formulario__input">
               <label for="nome">Nome</label>
-              <input id="nome" type="text" placeholder="Digite o seu nome">
+              <input id="nome" type="text" placeholder="Digite o seu nome" required>
             </div>
 
             <div class="formulario__input">
-              <label for="assunto">Assunto</label>
-              <input id="assunto" type="text" placeholder="Digite o assunto">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="Digite o seu email" required>
             </div>
 
             <div class="formulario__input">
               <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" type="text" placeholder="Digite a mensagem" rows="10"> </textarea>
+              <textarea id="mensagem" type="text" placeholder="Digite a mensagem" rows="10" required> </textarea>
             </div>
 
-            <button>Enviar</button>
+            <div class="button_group">
+              <button type="submit">Enviar</button>
+              <button id="messagesButton" style="display:none;">Ver mensagens</button>
+            </div>
           </form>
         </div>
       </div>
-      
     </section>
 
     <footer-component></footer-component>
 
-    <script src="/js/Navbar.js"></script>
-    <script src="/js/Footer.js"></script>
+    <script src="../js/components/Navbar.js"></script>
+    <script src="../js/components/Footer.js"></script>
+    <script src="../js/contato.js"></script>
   </body>
 </html>
